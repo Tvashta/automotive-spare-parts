@@ -73,13 +73,6 @@
         height: auto;
     }
 
-    .hero_area::after {
-        background-image: none;
-        background-color: #ffc500;
-        width: 100%;
-        height: 450px;
-    }
-
     .slider_section {
         text-align: center;
     }
@@ -99,9 +92,6 @@
         transform: translate(50%, 50%);
     }
 
-    .hero_area {
-        background: none;
-    }
 
     .slider_section {
         padding-top: 35px;
@@ -238,3 +228,32 @@
         max-width: 1170px;
     }
 }
+
+
+@media (max-width: 990px) {
+    .pcontainer{
+      display: none !important;
+    }
+    .pmobile{
+      display: flex !important;
+    }
+    .header_section{
+        position: relative;
+    }
+    .boxm img:hover{
+        width: 150%;
+        object-position: center;
+    }
+
+    .boxm{
+        overflow: hidden;
+    }
+  
+    #products .bspan {
+      position: relative;
+      display: inline-block;
+      transform: none!important;
+      margin: 0 auto;
+      float: none !important;
+    }
+  }
