@@ -1212,3 +1212,28 @@ a:focus {
     content: "READ MORE";
 }
 
+
+/* .login-page{
+    background-color: #ffc500;
+} */
+
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.login-btn a:before{
+    content: "LOGIN";
+    color: white;
+}
+
+.login-btn a:after {
+    content: "LOGIN";
+    background-color: white;
+}
