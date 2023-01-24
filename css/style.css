@@ -436,19 +436,22 @@ a:focus {
 
 .pcontainer {
     display: flex;
-    width: 100%;
-    padding: 3% 2% 5%;
-    box-sizing: border-box;
-    height: 80vh;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  .box {
-    flex: 1;
-    overflow: hidden;
-    transition: 0.5s;
-    margin: 0 2%;
+   .box {
+    margin: 1%;
+    width: 45%;
     box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
-    line-height: 0;
+    height: 45vh;
   }
+
+  .box > img{
+   width: 100%;
+   height: 100%;
+  }
+  /*
   .box > img {
     width: 200%;
     height: calc(100%);
@@ -469,8 +472,8 @@ a:focus {
   .box:hover > img {
     width: 100%;
     height: 100%;
-    /* object-fit: contain; */
-  }
+    object-fit: contain;
+  }*/
   
   .pmobile{
     display: none;
@@ -479,7 +482,7 @@ a:focus {
     flex-wrap: wrap;
   }
   .boxm{
-    width: 40%;
+    width: 100%;
     margin: 5%;
   }
   
@@ -518,9 +521,9 @@ a:focus {
   }
   
   .content .content-overlay {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.7);
     position: absolute;
-    height: 99%;
+    height: 100%;
     width: 100%;
     left: 0;
     top: 0;
@@ -650,6 +653,10 @@ a:focus {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 23.24670%;
     flex: 0 0 23.24670%;
+}
+
+.brand_section p{
+    color: gray;
 }
 
 .logogrid {
@@ -1217,7 +1224,7 @@ a:focus {
     background-color: #ffc500;
 } */
 
-.login,
+.login-pg,
 .image {
   min-height: 100vh;
 }
@@ -1236,4 +1243,17 @@ a:focus {
 .login-btn a:after {
     content: "LOGIN";
     background-color: white;
+}
+
+.login-page a{
+    position: absolute;
+    right: 2%;
+    top: 10px;
+    cursor: pointer;
+    color: #ffc500;
+    z-index: 1;
+}
+
+.login-page a:hover{
+    color: #000;
 }

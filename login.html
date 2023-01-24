@@ -33,6 +33,10 @@
 
 <body>
 <div class="container-fluid login-page">
+    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+      </svg> </a>
     <div class="row no-gutter">
         <!-- The image half -->
         <div class="col-md-7 d-none d-md-flex bg-image"></div>
@@ -40,7 +44,7 @@
 
         <!-- The content half -->
         <div class="col-md-5">
-            <div class="login d-flex align-items-center py-5">
+            <div class="login-pg d-flex align-items-center py-5">
 
                 <!-- Demo content-->
                 <div class="container">
@@ -101,13 +105,13 @@
     .then((userCredential) => {
         var user = userCredential.user;
         console.log(user)
-        $("#alert").addClass("alert-success").text("Success")
+        $("#alert").removeClass("alert-danger").addClass("alert-success").text("Success")
     })
     .catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
         console.log(errorMessage);
-        $("#alert").addClass("alert-danger").text(errorMessage)
+        $("#alert").removeClass("alert-success").addClass("alert-danger").text(errorMessage)
     });
         }</script>
 </body>
